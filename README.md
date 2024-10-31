@@ -1,51 +1,14 @@
-# React + TypeScript + Vite
+# Тестовое задание на стажировку ВК на позицию Фронтенд разработчика
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Собрать проект:
+- git clone https://github.com/nikita-shalamov/vk-internship-test.git
+- npm install
+- npm run dev
 
-Currently, two official plugins are available:
+### О проекте
+Данный проект это новостной сайт на котором публикуются новости про Vk Видео, VK Музыка и Mail.ru. Данные берутся из News API https://newsapi.org
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+На сайте использовалась библиотека VK UI, чтобы дизайн был максимально приближен к VK. Также в данной библиотеке есть удобные карточки, которые идеально подходят для новостей.
 
-## Expanding the ESLint configuration
+ВАЖНО!! Бесплатный тариф у API покрывает все потребности, но запросы будут работать только с localhost. Еще важно, что загрузить новости можно 5 раз по 20 штук и далее выпадет ошибка. Но этого хватит для тестирования функционала.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-# vk-internship-test
