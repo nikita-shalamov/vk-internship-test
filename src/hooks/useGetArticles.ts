@@ -14,7 +14,7 @@ const useGetArticles = (page: number) => {
 
       // получаем список новостей по API
       const response = await fetch(
-        `https://newsapi.org/v2/everything?q="VK Видео" OR "VK Музыка" OR "Mail.ru"&apiKey=${import.meta.env.VITE_API_KEY}&language=ru&page=${page}&pageSize=20`
+        `https://newsapi.org/v2/everything?q="VK Видео" OR "VK Музыка" OR "Mail.ru"&apiKey=6de197e8189f431bbb40764468c45f71&language=ru&page=${page}&pageSize=20`
       )
 
       // TODO: если запрос успешный, но новости закончились - выводить об этом инфо
