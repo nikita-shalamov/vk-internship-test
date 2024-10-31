@@ -1,0 +1,53 @@
+.contentCard {
+    @apply max-w-28;
+}
+
+.articles {
+    @apply pt-5 pb-10;
+}
+
+.articlesWrapper {
+    @apply grid grid-cols-4 gap-x-8 gap-y-8 mb-10;
+}
+
+@media (min-width: 1920px) {
+    .articlesWrapper {
+        @apply grid-cols-5 gap-x-6 gap-y-6
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+    .articlesWrapper {
+        @apply grid-cols-5 gap-x-6 gap-y-6
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .articlesWrapper {
+        @apply grid-cols-3 gap-x-6 gap-y-6
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .articlesWrapper {
+        @apply grid-cols-3 gap-x-6 gap-y-6
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .articlesWrapper {
+        @apply grid-cols-2 gap-x-6 gap-y-6
+    }
+}
+
+@media (max-width: 575px) {
+    .articlesWrapper {
+        @apply grid-cols-2 gap-y-6
+    }
+}
+
+@media (max-width: 440px) {
+    .articlesWrapper {
+        @apply grid-cols-1 gap-y-6
+    }
+}

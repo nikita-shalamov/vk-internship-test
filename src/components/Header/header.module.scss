@@ -1,0 +1,16 @@
+.headerWrapper {
+    @apply px-10 py-5 items-center gap-10;
+}
+
+.title {
+    @apply text-4xl font-medium text-center
+}
+
+.logos {
+    @apply mt-4 flex justify-center gap-3
+}
+
+.logo {
+    @apply max-h-5
+}
+

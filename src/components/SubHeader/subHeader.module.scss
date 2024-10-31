@@ -1,0 +1,28 @@
+.subHeaderWrapper {
+  @apply flex justify-between items-end;
+}
+
+.title {
+  @apply font-semibold text-2xl text-[#3F8AE0] flex justify-center gap-3;
+}
+
+.todayContainer {
+  @apply flex items-end flex-col;
+}
+
+.todayTitle {
+  @apply font-semibold text-[#828282];
+}
+
+.todayDate {
+  @apply font-normal text-[#828282];
+}
+
+@media (max-width: 575px) {
+  .subHeaderWrapper {
+    @apply flex-wrap-reverse gap-y-2;
+  }
+  .todayContainer {
+    @apply flex items-start flex-col;
+  }
+}
